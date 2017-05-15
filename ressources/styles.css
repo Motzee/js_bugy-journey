@@ -1,7 +1,8 @@
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("http://www.caronindustries.com/sites/default/files/styles/essence-large/public/essences/001_1929-2.jpg") fixed center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/table.jpg") fixed center;
     background-size: cover;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -14,19 +15,26 @@ main {
     box-sizing: border-box;
 }
 
+#player {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    z-index: 5;
+    top: calc((600px - 100px - 50px) / 2);
+    left: calc((800px - 100px - 50px) / 2);
+}
+
 @media screen and (min-width: 600px) and (max-width: 800px) {
     main {
         width: 600px;
         height: 450px;
     }
-}
-
-@media screen and (max-width: 599px) {
-    main {
-        width: 95%;
-        min-width: 320px;
-        min-height: 240px;
-        border-image-width: 0;
+    #player {
+        width: 37px;
+        height: 37px;
+        top: calc((450px - 100px - 50px) / 2);
+        left: calc((600px - 100px - 50px) / 2);
     }
 }
 
@@ -34,6 +42,15 @@ section {
     background: white;
     width: 100%;
     height: 100%;
-    padding: 1em;
     box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#map {
+    background: url("../img/map.jpg") center center;
+    width: 2000px;
+    height: 2000px;
+    margin-top: -50%;
+    margin-left: -50%;
 }
