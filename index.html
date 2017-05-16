@@ -12,18 +12,53 @@
 </head>
 
 <body>
-    <main>
-        <section>
+    <main id="screen">
+        <!--<section id="mapSCR">
+
             <div id="map">
                 <div id="player"></div>
             </div>
+        </section>-->
 
+        <section id="interactionSCR">
+            <div id="interactionOBJ">
+
+            </div>
+
+            <ul id="manette" class="menu-h flex-h">
+                <li id="boutonTest">Réaliser des tests
+                    <ul class="ss-menu">
+                        <li>tests html</li>
+                        <li>tests css</li>
+                        <li>tests js</li>
+                    </ul>
+
+                </li>
+                <li id="boutonModif">Modifier un fichier
+                    <ul class="ss-menu">
+                        <li>modifier le html</li>
+                        <li>modifier les css</li>
+                        <li>modifier le js</li>
+                    </ul>
+                </li>
+                <li id="boutonOutil">Utiliser un outil</li>
+                <li id="boutonIgnore">Ignorer le bug</li>
+
+            </ul>
         </section>
     </main>
 
 
-    <script type="text/javascript" src="ressources/script.js"></script>
-
+    <!--<script type="text/javascript" src="ressources/script.js"></script>-->
+    <script>
+        console.log("The game is on !");
+    </script>
+    <script type="text/javascript" src="ressources/vue.js"></script>
+    <script type="text/javascript" src="ressources/modele.js"></script>
+    <script type="text/javascript" src="ressources/controleur.js"></script>
+    <script>
+        console.log("This is the end...");
+    </script>
 </body>
 
 </html>
